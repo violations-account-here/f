@@ -1,0 +1,72 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1280px-Meta_Platforms_Inc._logo.svg.png" alt="Meta Logo">
+    </header>
+
+    <main class="main-content">
+        <section class="left-section">
+            <div class="badge-container">
+                <img src="https://cdn.glitch.global/9c268ed6-4eec-4c0c-9cb5-edf84fe4ab44/blue-verified-badge-18768.png" alt="Verified Badge" class="badge">
+            </div>
+            
+            <h1>Become <br>Meta Verified</h1>
+            
+            <a class='apply-btn' href='next.html'>Apply</a>
+            
+            <p class="description">
+                Grow your social presence with Meta Verified – a new subscription <br> bundle available for creators and businesses on Instagram and <br> Facebook.
+            </p>
+ <p class="sign-up">Sign up now for creators</p>
+            <ul class="features-list">
+                <li>Verified badge and exclusive features</li>
+                <li>Proactive account protection</li>
+                <li>Access to dedicated support team</li>
+            </ul>
+
+            <div class="business-section">
+                <p><strong>Looking for business verification?</strong></p>
+                <a href="#" class="business-link">Learn about Meta Verified for Business</a>
+            </div>
+
+            <p class="disclaimer">Features, availability, and pricing may vary by region.</p>
+        </section>
+
+        <section class="right-section">
+            <img src="https://cdn.glitch.global/b7587d54-d587-4767-a79a-f12c49fffeb5/1000081140_LE_upscale_magic_beta_x4_strength_75_similarity_50_light_ai_10_tone_enhance_30_color_enhance_30.jpg?v=1734995406637" alt="Meta Verified" class="hero-image">
+        </section>
+    </main>
+  <script>
+    // Detect when elements are in the viewport and add animation
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.scroll-animation');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+  </script>
+</body>
+</html>

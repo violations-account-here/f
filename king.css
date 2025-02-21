@@ -1,0 +1,637 @@
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background-color:#f0f2f5;min-height:100vh}.main-content{max-width:1200px;margin:0 auto;padding:20px}@media (max-width: 768px){.desktop-header,.desktop-logo-section{display:none}}@media (min-width: 769px){.mobile-header,.mobile-logo-section{display:none}}.header{background-color:#3b5998;color:#fff}.header-content{max-width:1200px;margin:0 auto;padding:16px}.mobile-header{display:flex;align-items:center;gap:16px}.back-button{background:none;border:none;color:#fff;font-size:24px;cursor:pointer}.desktop-header{display:flex;justify-content:space-between;align-items:center}.logo-title{display:flex;align-items:center;gap:16px}.fb-logo{width:40px;height:40px;background-color:#fff;border-radius:50%;position:relative}.fb-logo:after{content:"f";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#3b5998;font-weight:700;font-size:24px}.menu-button{background:none;border:none;color:#fff;font-size:24px;cursor:pointer}.search-section{max-width:800px;margin:50px auto;text-align:center}.search-section h1{font-size:32px;margin-bottom:24px;color:#1c1e21}.search-container2{position:relative}.search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:#65676b}input[type=search]{width:100%;padding:16px 16px 16px 48px;border-radius:24px;border:1px solid #dddfe2;background-color:#f0f2f5;font-size:16px;outline:none;transition:all .2s}input[type=text]:focus{border-color:#3b5998;box-shadow:0 0 0 2px #3b599833}.help-cards{display:grid;gap:24px;margin-top:48px}@media (min-width: 769px){.help-cards{grid-template-columns:repeat(3,1fr)}}.card{background-color:#fff;padding:24px;border-radius:8px;box-shadow:0 1px 2px #0000001a;transition:box-shadow .2s}.card:hover{box-shadow:0 2px 4px #0000001a}.card h3{color:#1c1e21;margin-bottom:12px;font-size:18px}.card p{color:#65676b;font-size:14px;line-height:1.4}.footer{margin-top:48px;padding:24px 0;border-top:1px solid #dddfe2;background-color:#fff}.footer-content{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;align-items:center;gap:16px}@media (min-width: 769px){.footer-content{flex-direction:row;justify-content:space-between}}.copyright{color:#65676b;font-size:14px}.footer-links{display:flex;gap:24px}.footer-links a{color:#65676b;text-decoration:none;font-size:14px}.footer-links a:hover{text-decoration:underline}
+/* Container styles */
+.custom-container {
+    padding: 0.5rem; /* Adjusts padding for spacing */
+    margin-bottom: 0.5rem; /* Adds space below */
+    display: flex; /* Enables flexbox layout */
+    justify-content: flex-end; /* Aligns content to the right */
+    background-color: rgb(245, 246, 247); /* Light background color */
+}
+
+/* Button styles */
+.custom-button {
+    color: white; /* Text color */
+    background-color: rgb(66, 103, 178); /* Button background color */
+    border: none; /* Removes default border */
+    padding: 0.4rem 1rem; /* Adds space inside the button */
+    font-size: 1.1rem; /* Sets font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+   
+}
+
+/* Hover effect */
+.custom-button:hover {
+    background-color: rgb(45, 80, 150); /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Focus effect */
+.custom-button:focus {
+    outline: none; /* Removes focus outline */
+    box-shadow: 0 0 5px rgba(66, 103, 178, 0.7); /* Adds a subtle shadow */
+}
+
+/* Disabled button */
+.custom-button:disabled {
+    background-color: rgb(150, 150, 150); /* Grey color for disabled state */
+    cursor: not-allowed; /* Changes cursor to not-allowed */
+    opacity: 0.7; /* Reduces opacity */
+}
+   body {
+            -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    background-color: var(--bs-body-bg);
+    color: #212529;
+    color: var(--bs-body-color);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Noto Sans, Liberation Sans, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: var(--bs-body-font-family);
+    font-size: 1rem;
+    font-size: var(--bs-body-font-size);
+    font-weight: 400;
+    font-weight: var(--bs-body-font-weight);
+    line-height: 1.5;
+    line-height: var(--bs-body-line-height);
+    margin: 0;
+    text-align: var(--bs-body-text-align)
+        }
+        .header {
+            padding: 10px;
+            background-color: #4267B2; /* Facebook blue */
+            color: white;
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Vertically center items */
+        }
+        .logo-container {
+            display: flex;
+            align-items: center; /* Vertically align logo and text */
+            gap: 10px; /* Add space between logo and text */
+        }
+        .logo-container img {
+            width: 40px;
+            height: 50px;
+        }
+        .logo-container h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .main-content {
+            margin: px; /* Adds spacing around the main content */
+
+     }
+    
+.search-icon-re {
+    position: absolute; /* Allows precise positioning */
+    right: 16px; /* Distance from the right edge of the container */
+    top: %; /* Vertically align the icon */
+    transform: translateY(-50%); /* Center the icon vertically */
+    font-size: 18px; /* Adjust size of the icon */
+    color: #555; /* Optional: Change the color */
+}
+/* Style for the hamburger menu */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: absolute; /* Position relative to the parent container */
+    top: 80px; /* Adjusted vertical positioning */
+    right: 20px; /* Align to the right */
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+.menu-icon div {
+    background-color: #333;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-icon div:nth-child(1) {
+    top: 0;
+}
+
+.menu-icon div:nth-child(2) {
+    top: 10px;
+}
+
+.menu-icon div:nth-child(3) {
+    top: 20px;
+}
+
+/* Style for the navigation menu */
+ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: none; /* Initially hidden for smaller screens */
+    position: absolute;
+    top: 90px; /* Adjusted vertical positioning */
+    right: 0; /* Align to the right side */
+    width: 200px; /* Set a fixed width */
+    text-align: right; /* Align menu items to the right */
+    z-index: 9; /* Ensure it overlays other content */
+}
+
+ul.navbar li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+ul.navbar li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+ul.navbar li a:hover {
+    background-color: #111;
+}
+
+/* Style for the hamburger menu */
+.menu-icon {
+    display: block; /* Show menu icon on all devices, including laptops */
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: absolute; /* Position relative to the parent container */
+    top: 80px; /* Adjusted vertical positioning */
+    right: 20px; /* Align to the right */
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+.menu-icon div {
+    background-color: #333;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-icon div:nth-child(1) {
+    top: 0;
+}
+
+.menu-icon div:nth-child(2) {
+    top: 10px;
+}
+
+.menu-icon div:nth-child(3) {
+    top: 20px;
+}
+
+/* Style for the navigation menu */
+ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 90px; /* Adjusted vertical positioning */
+    right: 0; /* Align to the right side */
+    width: 200px; /* Set a fixed width */
+    text-align: right; /* Align menu items to the right */
+    z-index: 9; /* Ensure it overlays other content */
+}
+
+ul.navbar li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+ul.navbar li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+ul.navbar li a:hover {
+    background-color: #111;
+}
+
+/* Ensure the hamburger menu is shown on laptops as well */
+@media screen and (min-width: 1024px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on laptops */
+    }
+
+    ul.navbar.active {
+        display: block; /* Show menu when active */
+    }
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show menu icon in mobile view */
+    }
+
+    .navbar.active {
+        display: block; /* Show menu when active */
+    }
+}
+/* General container for inputs */
+.fb-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit width for desktop */
+}
+
+/* Input field styles */
+.fb-input-container input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Input focus styles */
+.fb-input-container input:focus {
+    border-color: #1877f2; /* Facebook blue border on focus */
+    box-shadow: 0 0 4px rgba(24, 119, 242, 0.5); /* Subtle shadow on focus */
+}
+
+/* Label styles */
+.fb-input-container label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666; /* Neutral gray text */
+    margin-bottom: 5px;
+    text-transform: uppercase; /* Optional for a modern look */
+}
+
+/* Placeholder styles */
+.fb-input-container input::placeholder {
+    color: #aaa; /* Subtle placeholder color */
+}
+
+/* Mobile-friendly adjustment */
+@media screen and (max-width: 768px) {
+    .fb-input-container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+ .note {
+      font-size: 12px;
+      color: #606770;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+.search-icon-image {
+    width: 20px; /* Adjust size if needed */
+    height: auto;
+    margin-left: 30px; /* Default margin for larger screens */
+    cursor: pointer;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .search-icon-image {
+        margin-left: 70px; /* Reduce margin for smaller screens */
+    }
+}
+/* Ensure proper layout for laptops with typical screen width */
+@media (min-width: 1024px) {
+    .search-icon-image {
+        margin-left: 960px; /* Larger margin for laptops */
+    }
+}
+
+   
+.card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    word-wrap: break-word;
+    background-clip: initial;
+    background-color: var(--bs-card-bg);
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+    color: #212529;
+    color: var(--bs-body-color);
+    display: flex;
+    flex-direction: column;
+    height: var(--bs-card-height);
+    min-width: 0;
+    position: relative
+}
+ 
+img,
+svg {
+    vertical-align: middle
+}
+/* Reset some default styles */
+body, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Button styles */
+.submit-button {
+   width: 30%;
+    padding: 12px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    font-size: 15px;
+    cursor: pointer;
+}
+}
+
+}
+
+
+}
+.img-fluid,
+.img-thumbnail {
+    height: auto;
+    max-width: 100%
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h3, h5 {
+    color: ;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Header Styling */
+header {
+    background-color: #4267B2;
+    color: ;
+    padding: 15px;
+    text-align: center;
+}
+
+header h3 {
+    font-size: 24px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    
+}
+
+/* Form Inputs */
+.fb-input-container {
+    margin-bottom: 15px;
+}
+
+.fb-input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.fb-input-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 30%;
+    padding: 12px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+    header h3 {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .submit-button {
+   width: 30%;
+    padding: 12px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    font-size: 15px;
+    cursor: pointer;
+    }
+
+    .footer-links {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* For tablets and larger devices */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        width: 70%;
+    }
+
+    .submit-button {
+        width: 20%;
+    padding: 12px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+}
+
+/* For desktop and larger devices */
+@media only screen and (min-width: 1025px) {
+    .card {
+        width: 100%;
+    }
+
+    .submit-button {
+        width: 29%;
+    padding: 12px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    font-size: 17px;
+    cursor: pointer;
+    }
+}
+/* Header Button (Back Button) */
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.back-button img {
+    width: 70px;
+    height: 40px;
+}
+
+/* Menu and Search Icon */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.search-icon-image {
+    width: 20px; /* Adjust size if needed */
+    height: auto;
+    margin-left: 30px; /* Default margin for larger screens */
+    cursor: pointer;
+}
+
+
+
+
+/* Default settings for mobile (small screens) */
+  .responsive-video {
+    width: 100%;     /* Full width of its container */
+    height: auto;    /* Maintain aspect ratio */
+  }
+
+  /* Adjust for larger screens like laptops and desktops */
+  @media (min-width: 768px) {
+    .responsive-video {
+      width: 80%;      /* 80% of the container width */
+      height: auto;    /* Maintain aspect ratio */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .responsive-video {
+      width: 1280px;   /* Fixed width for larger screens */
+      height: 720px;   /* Fixed height for larger screens */
+    }
+  }
